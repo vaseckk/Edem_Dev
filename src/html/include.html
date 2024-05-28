@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp-starter</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="sms-home">
+        <div class="sms-home_parametrs">
+            <div class="slider-img__bg_sms">
+            <div class="vertical-block">
+
+            <div class="home__top">
+                <a href="index.html" class="home__top-class">Edem </a>    
+                </div>
+
+                <div class="sms-profile">
+                    <img src="../img/sms/Ellipse.png" alt="" href="setting.html">
+                    <a href="setting.html" class="sms-profile_text">Никита Кульбака</a>
+                </div>
+
+                <div class="sms-search">
+                    <a href="#" class="sms-search_img">
+                        <img src="../img/sms/frame/search.png" alt="">
+                        <input class="sms-search_text" type="text" id="searchInput" placeholder="Поиск...">
+                    </a>
+                </div>
+
+                <div class="sms-array_include">
+                    <a href="include.html" class="sms-array_img_include">
+                        <img src="../img/sms/frame/arrow.png" alt="" class="sms-array_image_include">
+                        <div class="sms-array_text_include">Входящие</div>
+                    </a>
+                </div>  
+
+                <div class="sms-array_two">
+                    <a href="sent.html" class="sms-array_two_img">
+                        <img src="../img/sms/frame/arrow_iwo.png" alt="" class="sms-array_two_image">
+                        <div class="sms-array_text-two">Отправленные</div>
+                    </a>
+                </div>
+
+                <div class="sms-bin">
+                    <a href="bin.html" class="sms-bin_img">
+                        <img src="../img/sms/frame/bin.png" alt="" class="sms-bin_image">
+                        <div class="sms-bin_text">Корзина</div>
+                    </a>
+                </div>
+
+                <div class="sms-setting">
+                    <a href="index.html" class="sms-setting_img">
+                        <img src="../img/sms/frame/setting.png" alt="" class="sms-setting_image">
+                        <div class="sms-setting_text">Выйти</div>
+                    </a>
+                </div>
+
+            </div>
+
+                <div class="include-block">
+                    <div class="include-parametrs">
+                        <div class="include-new__menu">
+                            <div class="new-menu__block-include">
+
+                                <div class="nobetween_include">
+
+                                <a href="#" class="modal-open__include">
+                                    <button id="highlight-message" class="one_block-include" >
+                                        <div class="one_block-image">
+                                            <img src="../img/sms/include/checkbox.png" alt="">
+                                        </div>
+                                        <div class="one_block-text">Выделить всё</div>
+                                    </button>
+                                </a>
+                                    
+                                <a href="#openModal" class="modal-open__include">
+                                    <button class="two_block-include" data-bs-toggle="modal" data-bs-target="#openModal">
+                                        <div class="two_block-image">
+                                            <img src="../img/sms/include/Ellipse.png" alt="">
+                                        </div>
+                                        <div class="two_block-text">Отправить сообщение</div>
+                                    </button>
+                                </a>
+ 
+
+<!-- MODAL -->
+
+<!-- HTML модального окна -->
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Кому</h3>
+                <input name="mail" type="email" class="form-control" maxlength="100" id="submithire" aria-describedby="helpBlock2" required>
+         
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+
+            <div class="modal-header">
+                <h3 class="modal-title">Тема</h3>
+                <textarea name="text" class="form-control-tema" maxlength="150" rows="1" id="submithire2"  required></textarea>
+            </div>
+
+            <div class="modal-body">   
+                <form action="/submit_form" method="post" enctype="multipart/form-data">
+                    <label for="myFile" class="myFile-paper-clip__include">
+                        <span class="span-paper-clip__include">
+                      <img src="/img/sms/frame/paper-clip.png" class="paper-clip__include" alt="Выберите файл">
+                    </span>
+                    <div class="div-paper-clip__include">Прикрепить файл</div>
+                    </label>
+                    <input type="file" id="myFile" name="myFile" style="display: none;">
+                  </form>
+                <textarea name="modal-messenger" class="form-control" rows="15" id="submithire2" placeholder="Написать сообщение..." required></textarea>
+                <button class="modal__button" type="submit" id="loginFetch">
+                    <div class="modal__h1" href="sms_page.html">Отправить</div>
+                </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL -->
+
+                                 </div>
+                        </div>
+
+
+                        <div class="include-new__menu-2">
+                            <div class="new-menu__block-include-2">
+                                Сегодня
+                            </div>
+                        </div>
+
+    <!-- include-new__menu-wrapper -->
+
+                    <div class="include-new__menu-wrapper">
+                        <a href="sms-write.html" id="additional-buttons" class="include-new__menu-3">
+                            <div class="readmeorno">
+                                <input class="readmeorno-span" type="checkbox" id="remembermed" name="horremembermens" />
+                                <label class="label-include" for="remembermed"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <d iv class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                    
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno2">
+                                <input class="readmeorno-span2" type="checkbox" id="remembermed2" name="horremembermens" />
+                                <label class="label-include2" for="remembermed2"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+
+                        <a href="" class="include-new__menu-3">
+                            <div class="readmeorno1">
+                                <input class="readmeorno-span1" type="checkbox" id="remembermed1" name="horremembermens" />
+                                <label class="label-include1" for="remembermed1"></label>
+                            </div>
+
+                            <div class="polzovatel-icon__include">
+                                <span class="polzovatel-img__include">
+                                    <img src="../img/sms/Ellipse.png" alt="" class="polzovatel-img__include">
+                                </span>
+                            </div>
+
+                            <div class="include-name__block">
+                                <div class="include-name__information">
+
+                                    <div class="i-n__i-text">
+                                        <span class="i-n__i-text-span">Почта Edem</span>
+                                    </div>
+
+                                    <div class="i-n__i-h3">
+                                        <span class="i-n__i-h3-span">Здесь будет лежать информация, которую присылали</span>
+                                    </div>
+
+                                    <div title="Вчера, 10:59" class="include-date">
+                                        <span id="include-date"></span>
+                                    </div>
+
+                                    <div class="include-polosa"></div>
+                        </a>
+                    
+                        <!-- Добавьте нужное количество блоков, повторяя структуру выше -->
+                    </div>
+
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

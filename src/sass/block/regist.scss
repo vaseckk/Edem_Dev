@@ -1,0 +1,296 @@
+.home-registr {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top:0px;
+    left:0px;
+    font-family: $userfont;
+
+}
+
+.home__parametrs {
+    color: #fff;
+}
+
+.home__top {
+    margin: 25px 30px;
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: #fff;
+    font-family: forum-oh5;
+    @include media-breakpoint-down(lg) {
+		display: none;
+	}
+
+}
+
+.registration__block{
+    //display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $accent;
+    margin-left: 0%;
+}
+
+.regist__text {
+    display: flex;
+    letter-spacing: 35px;
+    font-size: 40px;
+    margin-left: 50px;
+    @include media-breakpoint-up(xxxl) {
+        font-size: 55px;
+        margin-left: 4%;
+        margin-bottom: 20px;   
+	}
+    @include media-breakpoint-down(md) {
+		font-size: 30px;
+	}
+    @include media-breakpoint-down(sm) {
+		font-size: 20px;
+        letter-spacing: 15px;
+        margin-left: 27px;
+	}
+}
+
+.registr__p1 {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 30px auto 70px;
+    text-align: center;
+    opacity: .7;
+    color: $accent;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover{
+        color: #fff; 
+        opacity: .9;
+        }
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;  
+        margin: 30px auto 120px;
+    }
+}
+
+.registr__login {
+    display: flex;
+    background-color: #2E384D;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    border: none;
+    margin: auto;
+	transition: background .25s ease-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    outline: none;
+    &::placeholder {
+        color: #666080; 
+        opacity: .9;
+        margin: auto;
+        text-align: center;
+        border-style: none;
+    }
+    @include media-breakpoint-up(xxxl) { 
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+    width: 310px;
+	}
+}
+
+.registr__login::placeholder {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: .7;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover{
+        color: #000; 
+        opacity: .9;
+        }
+        @include media-breakpoint-up(xxxl) { 
+            font-size: 17px;
+        }
+}
+
+.registr__password {
+    display: flex;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 35px auto;
+    transition: background .25s ease-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    outline: none;
+    background-color: #2E384D;
+    &::placeholder {
+        color: #666080; 
+        opacity: .9;
+        margin: auto;
+        text-align: center;
+    }
+    @include media-breakpoint-up(xxxl) { 
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.registr__password::placeholder {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: .6;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    width: 100%;
+    height: 100vh;
+    &:hover{
+        color: #000; 
+        opacity: .9;
+        }
+        @include media-breakpoint-up(xxxl) { 
+            font-size: 17px;
+        }
+}
+
+.registr__password-dublicate {
+    display: flex;
+    background-color: #2E384D;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    outline: none;
+    &::placeholder {
+        color: #666080; 
+        opacity: .9;
+        margin: auto;
+        text-align: center;
+    }
+    @include media-breakpoint-up(xxxl) { 
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.registr__password-dublicate::placeholder {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: .6;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    width: 100%;
+    height: 100vh;
+    &:hover{
+        color: #000; 
+        opacity: .9;
+        }
+        @include media-breakpoint-up(xxxl) { 
+            font-size: 17px;
+        }
+}
+
+.registr_error-block {
+    background-color: #666080;
+    display: flex;
+    opacity: 0.9;
+    border-radius: 25px;
+    width: 390px;
+    height: 100%;
+    margin: 30px auto 50px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: rgba($color: #c9c9c9, $alpha: 0.08);
+    @include media-breakpoint-up(xxxl) { 
+        width: 600px;
+        height: 100%;
+        margin: 30px auto 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+        height: 100%;
+    }
+}
+
+.registr__profile {
+    text-decoration: none;
+    color: #ff0000;
+    display: block;
+    font-size: 15px;
+    //text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: auto;
+    text-align: center; 
+    @include media-breakpoint-up(xxxl) { 
+        font-size: 17px;
+    }
+}
+
+.registr__button {
+    display: flex;
+    background-color: #151E29;
+    opacity: .9;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+	&:hover {
+		background-color: #2E384D;
+        opacity: .9;
+	}
+    @include media-breakpoint-up(xxxl) { 
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.registr__h1 {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 10px;
+    margin: auto;
+    color: $accent;
+}

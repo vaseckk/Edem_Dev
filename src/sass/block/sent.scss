@@ -1,0 +1,43 @@
+//sms-array_two
+
+.sms-sent_two {
+    display: flex; 
+    border: #000;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #C9C9C9;
+    border: none; 
+    outline: none;
+    z-index: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    text-align: center;
+    align-items: center;
+    &:hover {
+        background-color: #C9C9C9;
+    }
+}
+
+.sms-sent_two_img{
+    display: flex;
+    text-decoration: none; 
+    align-items: center;
+    margin-left: 16px; 
+} 
+
+.sms-sent_two_image{
+    display: flex;
+    text-decoration: none; 
+    align-items: center;
+} 
+
+.sms-sent_text-two {
+    color: #000;
+    text-decoration: none; 
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}

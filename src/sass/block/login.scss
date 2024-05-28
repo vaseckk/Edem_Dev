@@ -1,0 +1,353 @@
+.a {
+    text-decoration: none;
+}
+
+.home-login {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-family: $userfont;
+}
+
+.home__parametrs {
+    color: #fff;
+}
+
+.home__top {
+    margin: 25px 30px;
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 10px;
+    @include media-breakpoint-down(sm) {
+		display: none;
+	}
+    @include media-breakpoint-up(xxxl) {
+        font-size: 40px;   
+	}
+}
+
+.home__top-class {
+    color: #fff;
+    text-decoration: none;
+    opacity: .9;
+}
+
+//BLOCK
+
+.login__block{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $accent;
+}
+
+.poloska__login {
+	flex: 0 0 140px;
+    margin-left: -210px;
+    margin-top: 20px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	&::before {
+        content: '';
+        height: 1px;
+        width: 200px;
+        background-color: #666080;
+        border-radius: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+		display: none;
+	}
+    @include media-breakpoint-up(xxxl) {
+        margin-top: 38px; 
+        margin-left: -220px;
+	}
+}
+
+.login__text-block {
+    text-transform: uppercase;
+    letter-spacing: 55px;
+    font-size: 40px;
+    margin-left: 14%;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xxxl) {
+        font-size: 55px;
+        margin-left: 12%;
+        margin-bottom: 20px;   
+	}
+    @include media-breakpoint-down(sm) {
+		font-size: 20px;
+        letter-spacing: 15px;
+        margin-left: 35%;
+     }
+}
+
+.poloska__login-dublicate {
+	flex: 0 0 140px;
+    margin-left: 360px;
+    margin-top: 20px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	&::before {
+        content: '';
+        height: 1px;
+        width: 200px;
+        background-color: #666080;
+        border-radius: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+		display: none;
+	}
+    @include media-breakpoint-up(xxxl) {
+        margin-top: 38px;
+        margin-left: 400px; 
+	}
+}
+
+
+.login__p1 {
+    text-decoration: none;
+    color: $accent;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+    opacity: .7;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover{
+        color: #fff; 
+        opacity: .9;
+        }
+        @include media-breakpoint-up(xxxl) {
+            font-size: 20px;   
+        }
+}
+
+//BUTTON ONE
+
+.login__login {
+    display: flex;
+    background-color: #2E384D;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    border: none;
+    margin: 90px auto 35px;
+	transition: background .25s ease-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    outline: none;
+    &::placeholder {
+        color: #666080; 
+        opacity: .9;
+        margin: auto;
+        text-align: center;
+    }
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;  
+        margin: 120px auto 35px; 
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.login__login::placeholder {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: .7;
+    color: #fff;
+    width: 100%;
+    height: 100ph;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &::after{
+        opacity: .0;
+        color: #000;
+    }
+    @include media-breakpoint-up(xxxl) {
+        font-size: 17px; 
+    }
+}
+
+
+.login__password {
+    display: flex;
+    background-color: #2E384D;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: auto;
+    transition: background .25s ease-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    outline: none;
+    &::placeholder {
+        color: #666080; 
+        opacity: .9;
+        margin: auto;
+        text-align: center;
+    }
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;  
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+    }
+}
+
+.login__password::placeholder {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: auto;
+    opacity: .6;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    width: 100%;
+    height: 100ph;
+    &::after{
+        opacity: 0;
+    }
+    @include media-breakpoint-up(xxxl) {
+        font-size: 17px; 
+    }
+}
+
+.sikl__login {
+	flex: 0 0 140px;
+    margin-left: 60px;
+    margin-top: 407.5px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	&::before {
+        content: '';
+        height: 20px;
+        width: 20px;
+        background-color: #666080;
+        border-radius: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+//ERROR
+
+.login_error-block {
+    display: flex;
+    background-color: #666080;
+    opacity: .9;
+    border-radius: 25px;
+    width: 350px;
+    height: 30px;
+    margin: 40px auto 10px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: rgba($color: #c9c9c9, $alpha: 0.08);
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;  
+        width: 390px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.login__error {
+    text-decoration: none;
+    color: #ff0000;
+    display: block;
+    font-size: 15px;
+    //text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: auto;
+    text-align: center; 
+    @include media-breakpoint-up(xxxl) { 
+        font-size: 17px;
+    }
+}
+
+//REMEMBER
+
+.login__profile {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 50px auto ;
+    text-align: center;
+    color: $accent;
+    opacity: .7;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover{
+        color: #fff; 
+        opacity: .9;
+        }
+        @include media-breakpoint-up(xxxl) {
+            font-size: 20px;  
+
+        }
+    }
+
+
+.login__button {
+    display: flex;
+    background-color: #151E29;
+    opacity: .9;
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+	&:hover {
+		background-color: #2E384D;
+        opacity: .9;
+	}
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;  
+        width: 390px;
+        height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 310px;
+        }
+}
+
+.ln__h1 {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 10px;
+    margin: auto;
+    color: $accent;
+}
